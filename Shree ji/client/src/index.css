@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(47, 29%, 97%);
+  --foreground: hsl(30, 25%, 20%);
+  --muted: hsl(45, 20%, 92%);
+  --muted-foreground: hsl(30, 15%, 45%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(30, 25%, 20%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(30, 25%, 20%);
+  --border: hsl(30, 15%, 85%);
+  --input: hsl(30, 15%, 85%);
+  --primary: hsl(30, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(47, 29%, 97%);
+  --secondary-foreground: hsl(30, 25%, 20%);
+  --accent: hsl(47, 29%, 97%);
+  --accent-foreground: hsl(30, 25%, 20%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(30, 100%, 50%);
+  --radius: 0.5rem;
+
+  /* Custom spiritual colors */
+  --saffron: hsl(30, 100%, 50%);
+  --gold: hsl(51, 100%, 50%);
+  --deep-red: hsl(0, 68%, 42%);
+  --maroon: hsl(0, 100%, 25%);
+  --cream: hsl(47, 29%, 97%);
+  --warm-gray: hsl(30, 15%, 45%);
+  --dark-brown: hsl(30, 25%, 20%);
+}
+
+.dark {
+  --background: hsl(30, 25%, 8%);
+  --foreground: hsl(47, 29%, 97%);
+  --muted: hsl(30, 15%, 15%);
+  --muted-foreground: hsl(30, 15%, 60%);
+  --popover: hsl(30, 25%, 8%);
+  --popover-foreground: hsl(47, 29%, 97%);
+  --card: hsl(30, 25%, 8%);
+  --card-foreground: hsl(47, 29%, 97%);
+  --border: hsl(30, 15%, 15%);
+  --input: hsl(30, 15%, 15%);
+  --primary: hsl(30, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(30, 15%, 15%);
+  --secondary-foreground: hsl(47, 29%, 97%);
+  --accent: hsl(30, 15%, 15%);
+  --accent-foreground: hsl(47, 29%, 97%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(30, 100%, 50%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-saffron {
+    color: hsl(30, 100%, 50%);
+  }
+  
+  .text-gold {
+    color: hsl(51, 100%, 50%);
+  }
+  
+  .text-deep-red {
+    color: hsl(0, 68%, 42%);
+  }
+  
+  .text-maroon {
+    color: hsl(0, 100%, 25%);
+  }
+  
+  .text-cream {
+    color: hsl(47, 29%, 97%);
+  }
+  
+  .text-warm-gray {
+    color: hsl(30, 15%, 45%);
+  }
+  
+  .text-dark-brown {
+    color: hsl(30, 25%, 20%);
+  }
+  
+  .bg-saffron {
+    background-color: hsl(30, 100%, 50%);
+  }
+  
+  .bg-gold {
+    background-color: hsl(51, 100%, 50%);
+  }
+  
+  .bg-deep-red {
+    background-color: hsl(0, 68%, 42%);
+  }
+  
+  .bg-maroon {
+    background-color: hsl(0, 100%, 25%);
+  }
+  
+  .bg-cream {
+    background-color: hsl(47, 29%, 97%);
+  }
+  
+  .bg-warm-gray {
+    background-color: hsl(30, 15%, 45%);
+  }
+  
+  .bg-dark-brown {
+    background-color: hsl(30, 25%, 20%);
+  }
+}
